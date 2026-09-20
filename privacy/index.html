@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en" data-theme="highlighter" data-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Privacy policy · YellowQuest</title>
+    <meta
+      name="description"
+      content="How YellowQuest handles your progress, location, iCloud saves, Premium subscriptions, and shared content."
+    />
+    <meta property="og:title" content="Privacy policy · YellowQuest" />
+    <meta
+      property="og:description"
+      content="How YellowQuest handles your progress, location, iCloud saves, Premium subscriptions, and shared content."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="{{base}}favicon.svg" />
+    <script>
+      try {
+        const theme = localStorage.getItem("yellowquest.web.theme");
+        const appearance = localStorage.getItem("yellowquest.web.appearance");
+        document.documentElement.dataset.theme =
+          theme === "dracula" ? "dracula" : "highlighter";
+        document.documentElement.dataset.mode =
+          appearance === "dark" ||
+          (appearance !== "light" &&
+            matchMedia("(prefers-color-scheme: dark)").matches)
+            ? "dark"
+            : "light";
+      } catch {
+        document.documentElement.dataset.mode = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <!-- site:header -->
+    <main id="main" class="site-shell">
+      <section class="hero">
+        <div>
+          <a class="back-link" href="{{base}}">← Help desk</a>
+          <p class="eyebrow mt-8">Privacy &amp; trust</p>
+          <h1>Your adventure.<br />Your information.</h1>
+          <p class="hero-description">
+            Here’s what YellowQuest stores, what it shares, and the choices you
+            have along the way.
+          </p>
+          <p class="updated">Effective {{date}}</p>
+        </div>
+        <aside class="summary-card">
+          <span class="eyebrow">The short version</span>
+          <ul>
+            <li>
+              <span aria-hidden="true">↗</span> Progress starts on your device.
+            </li>
+            <li>
+              <span aria-hidden="true">↗</span> Private saves sync with iCloud.
+            </li>
+            <li><span aria-hidden="true">↗</span> Sharing is your choice.</li>
+            <li>
+              <span aria-hidden="true">↗</span> No ads or cross-app tracking.
+            </li>
+          </ul>
+          <p>
+            The full details, including public rankings and party sharing, are
+            below.
+          </p>
+        </aside>
+      </section>
+      <div class="policy-layout">
+        <nav class="policy-nav" aria-label="On this page">
+          <p class="eyebrow">On this page</p>
+          <ol>
+            <li>
+              <a href="#on-your-device"><span>01</span>On your device</a>
+            </li>
+            <li>
+              <a href="#private-icloud-sync"
+                ><span>02</span>Private iCloud sync</a
+              >
+            </li>
+            <li>
+              <a href="#premium-and-yellowpoints"
+                ><span>03</span>Premium and YellowPoints</a
+              >
+            </li>
+            <li>
+              <a href="#maps-and-location"><span>04</span>Maps and location</a>
+            </li>
+            <li>
+              <a href="#public-rankings-and-parties"
+                ><span>05</span>Public rankings and parties</a
+              >
+            </li>
+            <li>
+              <a href="#reports-and-blocking"
+                ><span>06</span>Reports and blocking</a
+              >
+            </li>
+            <li>
+              <a href="#your-controls"><span>07</span>Your controls</a>
+            </li>
+            <li>
+              <a href="#no-advertising-tracking"
+                ><span>08</span>No advertising tracking</a
+              >
+            </li>
+            <li>
+              <a href="#this-website"><span>09</span>This website</a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><span>10</span>Questions about your privacy?</a
+              >
+            </li>
+          </ol>
+          <a class="text-link" href="{{base}}support/"
+            >Need a hand? <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+        <article class="policy-prose" aria-label="Privacy policy">
+          <section id="on-your-device" class="policy-section">
+            <div class="section-number">01</div>
+            <div>
+              <h2>On your device</h2>
+              <p>
+                YellowQuest stores your profile, preferences, quests,
+                discoveries, badges, rewards and journey summaries to run the
+                app. Saved GPS samples are retained for active or recoverable
+                journeys and removed when a journey is saved as completed or
+                discarded. The current route may remain in memory for an
+                optional overlay export until you clear it, start another
+                journey or close the app. Recorder diagnostics contain counts
+                and error codes, not precise coordinates.
+              </p>
+            </div>
+          </section>
+          <section id="private-icloud-sync" class="policy-section">
+            <div class="section-number">02</div>
+            <div>
+              <h2>Private iCloud sync</h2>
+              <p>
+                When sync is enabled, Apple CloudKit stores your private save so
+                devices using the same iCloud account can share progress. This
+                includes your profile and optional photo, rewards, quests,
+                adventures, home and quest destinations, discovered map cells
+                and associated times. Raw GPS recordings are excluded. Private
+                saved locations are still location data, even though raw routes
+                are not uploaded.
+              </p>
+            </div>
+          </section>
+          <section id="premium-and-yellowpoints" class="policy-section">
+            <div class="section-number">03</div>
+            <div>
+              <h2>Premium and YellowPoints</h2>
+              <p>
+                Apple processes monthly and yearly Premium subscriptions.
+                YellowQuest uses verified StoreKit entitlements to unlock
+                Premium and receives no payment-card details. There is no
+                separate YellowQuest account or account sign-in in this version.
+                Subscriptions follow the device&#x27;s App Store account and are
+                managed through Apple.
+              </p>
+              <p>
+                YellowPoints are earned through gameplay, stored on your device
+                and synchronized in your private iCloud save. They cannot be
+                bought in this version. Gameplay and location observations are
+                not sent to a separate YellowQuest account or points server.
+              </p>
+              <p>
+                Deleting the app or its data does not cancel your Apple
+                subscription. Manage or cancel it through Apple’s subscription
+                settings.
+              </p>
+            </div>
+          </section>
+          <section id="maps-and-location" class="policy-section">
+            <div class="section-number">04</div>
+            <div>
+              <h2>Maps and location</h2>
+              <p>
+                With your permission, location supports discovery, journeys and
+                quest check-ins, including background check-ins when allowed by
+                your settings. Apple MapKit handles maps, area searches and
+                place lookups. Search terms, the searched area and requested
+                places are sent to Apple. Opening navigation sends the chosen
+                destination to your selected map provider. You can change
+                location access in device Settings.
+              </p>
+            </div>
+          </section>
+          <section id="public-rankings-and-parties" class="policy-section">
+            <div class="section-number">05</div>
+            <div>
+              <h2>Public rankings and parties</h2>
+              <p>
+                Publishing a public profile shares your chosen name and optional
+                photo, ranking stats and a stable public identifier. Joining a
+                party publishes the party name and photo, member ranking stats,
+                membership identifiers and join dates used to verify group
+                scores. Rankings do not publish your points balance, home, quest
+                destinations or live location.
+              </p>
+              <p>
+                When you share an adventure, its quest destinations become
+                available to your party through CloudKit sharing. Party members
+                can see membership names and shared quest check-in progress.
+                Optional location sharing is off by default. When you turn it on
+                for a party, your latest location, accuracy, update time and
+                photo from Profile are shared with all current and future
+                members through the private CloudKit share, including while the
+                app is in the background with Always location access.
+                YellowQuest keeps one latest location record per member, not a
+                route history. Locations older than two minutes disappear from
+                the app’s map; this display expiry does not itself erase the
+                CloudKit record. Sharing controls apply to each device. If
+                multiple devices share, the newest fix is displayed. Stopping
+                sharing clears the coordinate and photo when the latest fix came
+                from this device; another device may continue sharing until you
+                stop it there too. Leaving, removal or ending the party deletes
+                the location record when the cloud operation succeeds. A failed
+                stop stops this device’s GPS sharing immediately and shows a
+                connection message. Invitation links give access to an
+                invitation; send them only to people you intend to invite.
+              </p>
+            </div>
+          </section>
+          <section id="reports-and-blocking" class="policy-section">
+            <div class="section-number">06</div>
+            <div>
+              <h2>Reports and blocking</h2>
+              <p>
+                Public names are filtered, and Apple’s on-device Sensitive
+                Content Analysis checks public photos when enabled in iOS
+                Settings. Screening results are not uploaded. Reports send your
+                selected reason, optional details, the reported name and photo,
+                and account identifiers to CloudKit for moderator review.
+                Reports are not public listings. Your blocked-account list is
+                stored privately for your iCloud account. Blocking hides that
+                person’s public content, invitations and location marker; it
+                does not leave or remove members from an existing party. Members
+                of a CloudKit share retain access to its shared records. Stop
+                location sharing or leave/remove the member to end that sharing
+                relationship.
+              </p>
+              <p>
+                Deleting your YellowQuest data removes your reports and blocked
+                list. Minimal moderation identifiers may remain to enforce
+                restrictions and prevent abuse. Reports remain until deleted by
+                their author through account deletion or removed by a moderator.
+              </p>
+            </div>
+          </section>
+          <section id="your-controls" class="policy-section">
+            <div class="section-number">07</div>
+            <div>
+              <h2>Your controls</h2>
+              <p>
+                You can remove your public profile in Rankings and leave a group
+                in Party. Sync and deletion controls are in Settings.
+                <strong>Delete All Local Data</strong> clears this device only;
+                cloud and public data remain.
+                <strong>Delete YellowQuest Data</strong>, in iCloud settings,
+                removes your cloud save, public profile, your party data and
+                this device’s progress. It disbands parties you lead. An
+                interrupted deletion stays pending for retry, with sync paused.
+                Minimal deletion markers prevent old devices from uploading
+                erased progress again. <strong>Start Fresh</strong> creates an
+                empty save.
+              </p>
+              <p>
+                Other devices may retain offline copies until they reconnect and
+                complete the deletion flow. Exports or copies held by other
+                people cannot be recalled.
+              </p>
+            </div>
+          </section>
+          <section id="no-advertising-tracking" class="policy-section">
+            <div class="section-number">08</div>
+            <div>
+              <h2>No advertising tracking</h2>
+              <p>
+                YellowQuest does not use advertising or cross-app tracking. Its
+                data is used for app functionality. Photos are optional; the
+                system photo picker gives access only to the images you select.
+                Live Activities can display quest information on your Lock
+                Screen when enabled.
+              </p>
+            </div>
+          </section>
+          <section id="this-website" class="policy-section">
+            <div class="section-number">09</div>
+            <div>
+              <h2>This website</h2>
+              <p>
+                This website stores your selected theme and appearance in your
+                browser’s local storage. It uses no analytics scripts,
+                advertising cookies, or tracking pixels. You can clear these
+                preferences in your browser settings.
+              </p>
+              <p>
+                When hosted on GitHub Pages, GitHub may log visitor IP addresses
+                for security. Learn more in
+                <a
+                  href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection"
+                  rel="noreferrer"
+                  >GitHub’s hosting documentation</a
+                >. Emailing support shares your email address and the
+                information you choose to include so we can respond to your
+                request.
+              </p>
+            </div>
+          </section>
+          <section id="contact" class="policy-section">
+            <div class="section-number">10</div>
+            <div>
+              <h2>Questions about your privacy?</h2>
+              <p>
+                This policy describes the current YellowQuest app and this
+                website. Operator: <strong>{{owner}}</strong>.
+              </p>
+              <p>{{inlineContact}}</p>
+              <p>
+                For access, deletion, or other privacy questions, include only
+                the information needed to explain your request. Do not send
+                passwords, verification codes, payment details, or private party
+                invitation links.
+              </p>
+            </div>
+          </section>
+          <a class="back-link mt-8" href="#main">Back to top ↑</a>
+        </article>
+      </div>
+    </main>
+    <!-- site:footer -->
+  </body>
+</html>

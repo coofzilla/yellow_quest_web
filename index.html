@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" data-theme="highlighter" data-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Help, privacy &amp; a little peace of mind · YellowQuest</title>
+    <meta
+      name="description"
+      content="Find answers, understand your data, and get help with YellowQuest."
+    />
+    <meta
+      property="og:title"
+      content="Help, privacy &amp; a little peace of mind · YellowQuest"
+    />
+    <meta
+      property="og:description"
+      content="Find answers, understand your data, and get help with YellowQuest."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="{{base}}favicon.svg" />
+    <script>
+      try {
+        const theme = localStorage.getItem("yellowquest.web.theme");
+        const appearance = localStorage.getItem("yellowquest.web.appearance");
+        document.documentElement.dataset.theme =
+          theme === "dracula" ? "dracula" : "highlighter";
+        document.documentElement.dataset.mode =
+          appearance === "dark" ||
+          (appearance !== "light" &&
+            matchMedia("(prefers-color-scheme: dark)").matches)
+            ? "dark"
+            : "light";
+      } catch {
+        document.documentElement.dataset.mode = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <!-- site:header -->
+    <main id="main" class="site-shell">
+      <section class="home-hero">
+        <div>
+          <p class="eyebrow">
+            <span class="status-dot"></span> The YellowQuest help desk
+          </p>
+          <h1>
+            Every adventure.<br /><span class="text-accent"
+              >A little more clarity.</span
+            >
+          </h1>
+          <p class="hero-description">
+            The practical stuff, in one place. Find an answer, understand your
+            data, and get back to discovering.
+          </p>
+          <a class="button-primary mt-8" href="{{base}}support/"
+            >Find some help <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="map-art" aria-hidden="true">
+          <svg viewBox="0 0 400 340" fill="none">
+            <defs>
+              <pattern
+                id="grid"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M40 0H0V40"
+                  stroke="currentColor"
+                  stroke-opacity=".13"
+                />
+              </pattern>
+            </defs>
+            <rect width="400" height="340" fill="url(#grid)" />
+            <path
+              d="M-20 250c90-95 116 70 224-30s159 3 220-60M-40 220c94-85 132 68 230-34s159 3 220-60M-10 300c100-94 130 68 226-42s159 3 220-60"
+              stroke="currentColor"
+              stroke-opacity=".2"
+              stroke-width="1.5"
+            />
+            <path
+              d="M80 260V170h95v-55h125V60"
+              stroke="var(--highlighter)"
+              stroke-width="4"
+              stroke-dasharray="6 8"
+              stroke-linecap="round"
+            />
+            <circle cx="80" cy="260" r="9" fill="var(--highlighter)" />
+            <circle
+              cx="80"
+              cy="260"
+              r="18"
+              stroke="var(--highlighter)"
+              stroke-opacity=".4"
+            />
+            <path
+              d="m300 36 24 14v28l-24 14-24-14V50Z"
+              fill="var(--highlighter)"
+            />
+            <path
+              d="m290 62 7 7 13-14"
+              stroke="var(--on-highlighter)"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="175" cy="170" r="5" fill="currentColor" />
+          </svg>
+          <div class="map-art-note">
+            <span class="status-dot"></span> A little clarity for the journey.
+          </div>
+        </div>
+      </section>
+      <section class="portal-grid" aria-label="How can we help?">
+        <a class="portal-card" href="{{base}}privacy/"
+          ><span class="eyebrow">01 / Your information</span>
+          <div class="portal-card-title">
+            <h2>Privacy, explained.</h2>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <p>
+            What stays on your device, what syncs with iCloud, and what you
+            choose to share.
+          </p>
+          <span class="text-link"
+            >Read the privacy policy <span aria-hidden="true">→</span></span
+          ></a
+        ><a class="portal-card" href="{{base}}support/"
+          ><span class="eyebrow">02 / A helping hand</span>
+          <div class="portal-card-title">
+            <h2>Keep exploring.</h2>
+            <span aria-hidden="true">↗</span>
+          </div>
+          <p>
+            A little help with Premium, progress, points, and the occasional
+            wrong turn.
+          </p>
+          <span class="text-link"
+            >Visit support <span aria-hidden="true">→</span></span
+          ></a
+        >
+      </section>
+      <div class="home-footnote">
+        <span class="status-dot"></span>
+        <p>
+          No ads or cross-app tracking in YellowQuest. Just more reasons to
+          explore.
+        </p>
+      </div>
+    </main>
+    <!-- site:footer -->
+  </body>
+</html>

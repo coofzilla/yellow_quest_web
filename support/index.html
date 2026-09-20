@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-theme="highlighter" data-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Support · YellowQuest</title>
+    <meta
+      name="description"
+      content="Get help with YellowQuest Premium, YellowPoints, iCloud progress, location sharing, and data deletion."
+    />
+    <meta property="og:title" content="Support · YellowQuest" />
+    <meta
+      property="og:description"
+      content="Get help with YellowQuest Premium, YellowPoints, iCloud progress, location sharing, and data deletion."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="{{base}}favicon.svg" />
+    <script>
+      try {
+        const theme = localStorage.getItem("yellowquest.web.theme");
+        const appearance = localStorage.getItem("yellowquest.web.appearance");
+        document.documentElement.dataset.theme =
+          theme === "dracula" ? "dracula" : "highlighter";
+        document.documentElement.dataset.mode =
+          appearance === "dark" ||
+          (appearance !== "light" &&
+            matchMedia("(prefers-color-scheme: dark)").matches)
+            ? "dark"
+            : "light";
+      } catch {
+        document.documentElement.dataset.mode = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <!-- site:header -->
+    <main id="main" class="site-shell">
+      <section class="hero support-hero">
+        <div>
+          <a class="back-link" href="{{base}}">← Help desk</a>
+          <p class="eyebrow mt-8">A helping hand</p>
+          <h1>
+            Let’s get you<br /><span class="text-accent">back out there.</span>
+          </h1>
+          <p class="hero-description">
+            A question, a bug, or a little bump in the road? Start here. We’ll
+            help you find your way.
+          </p>
+        </div>
+        <aside class="contact-card">
+          <span class="contact-icon" aria-hidden="true">↗</span>
+          <p class="eyebrow">Talk to a human</p>
+          <h2>We’re here to help.</h2>
+          <p>
+            For app questions, privacy requests, or something that isn’t working
+            as expected.
+          </p>
+          <div class="contact-actions">{{contact}}</div>
+          <p class="contact-note">
+            Please keep passwords and private locations out of your message.
+          </p>
+        </aside>
+      </section>
+      <section class="faq-layout" aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <p class="eyebrow">A good place to start</p>
+          <h2 id="faq-title">A few quick<br />answers.</h2>
+          <p>Less searching.<br />More discovering.</p>
+        </div>
+        <div>
+          <details class="faq">
+            <summary>
+              Do I need a YellowQuest account?<span
+                aria-hidden="true"
+                class="faq-plus"
+                >+</span
+              >
+            </summary>
+            <p>
+              No separate YellowQuest account is required. Progress is saved on
+              your device. Enable iCloud sync to share progress across devices
+              using the same iCloud account. Some features, including
+              downloading new quests and spending YellowPoints, require iCloud.
+            </p>
+          </details>
+          <details class="faq">
+            <summary>
+              How do I restore or manage Premium?<span
+                aria-hidden="true"
+                class="faq-plus"
+                >+</span
+              >
+            </summary>
+            <p>
+              Open Profile → Settings → YellowQuest Premium and choose Restore
+              Purchases or Manage Subscription. Premium follows your App Store
+              account, which is separate from your iCloud save. Deleting the app
+              or its data does not cancel your subscription.
+            </p>
+          </details>
+          <details class="faq">
+            <summary>
+              How do YellowPoints work?<span aria-hidden="true" class="faq-plus"
+                >+</span
+              >
+            </summary>
+            <p>
+              Earn YellowPoints through gameplay and spend them within the app.
+              Your balance is saved with your progress and syncs when private
+              iCloud sync is enabled. Spending requires an available iCloud
+              save. Point packs are not available for purchase in this version.
+            </p>
+          </details>
+          <details class="faq">
+            <summary>
+              Who can see my location?<span aria-hidden="true" class="faq-plus"
+                >+</span
+              >
+            </summary>
+            <p>
+              Party location sharing is optional and starts off. When enabled,
+              your latest location and Profile photo are shared with current and
+              future members of that party. Background sharing requires Always
+              location access. Stop sharing on each device you use; blocking
+              someone does not remove their access to an existing CloudKit
+              share.
+            </p>
+          </details>
+          <details class="faq">
+            <summary>
+              How do I delete my data?<span aria-hidden="true" class="faq-plus"
+                >+</span
+              >
+            </summary>
+            <p>
+              Delete All Local Data clears progress on this device only. To also
+              remove cloud and public data, open Profile → Settings → iCloud →
+              Delete YellowQuest Data. This disbands parties you lead.
+              Interrupted deletion can require a retry, and other devices may
+              retain offline copies until they reconnect.
+            </p>
+          </details>
+          <details class="faq">
+            <summary>
+              Something went wrong. What should I send?<span
+                aria-hidden="true"
+                class="faq-plus"
+                >+</span
+              >
+            </summary>
+            <p>
+              Tell us what you were trying to do, what happened, and your iPhone
+              model, iOS version, and YellowQuest version. A screenshot can
+              help, but crop out private locations and personal information.
+              Never send passwords, Apple verification codes, payment details,
+              or party invitation links.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="privacy-strip">
+        <div>
+          <p class="eyebrow">Your data, explained</p>
+          <h2>A little peace of mind.</h2>
+          <p>
+            See how your information is stored and shared, and how to take
+            control of it.
+          </p>
+        </div>
+        <a class="button-secondary" href="{{base}}privacy/"
+          >Read our privacy policy <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <!-- site:footer -->
+  </body>
+</html>
