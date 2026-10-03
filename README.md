@@ -4,7 +4,7 @@ Static privacy, support, and home pages built with Vite, strict TypeScript, and 
 
 Publishing uses the manually dispatched GitHub Pages workflow. Pushing a commit does not publish the site.
 
-Production target: https://coofzilla.github.io/yellow_quest_web/ (privacy at `privacy/`, support at `support/`).
+Production domain: https://yellowquest.io/ (privacy at `/privacy/`, support at `/support/`). Squarespace manages DNS; GitHub Pages hosts the site. `www.yellowquest.io` redirects to the primary domain.
 
 ## Local development
 
@@ -46,7 +46,7 @@ Theme tokens live in `src/styles.css` and mirror the iOS `AppTheme.swift` Highli
 
 The workflow checks and builds before uploading `dist/`. It runs **only** when manually dispatched; pushing commits does not publish. Action revisions are pinned to the official [Vite Pages workflow](https://vite.dev/guide/static-deploy.html#github-pages).
 
-GitHub Pages supplies the base path automatically. A repository site uses `/repository-name/`; a user site or configured custom domain uses `/`. No domain is assumed or registered here. To preview a repository path locally:
+GitHub Pages supplies the base path automatically. A repository site uses `/repository-name/`; a user site or configured custom domain uses `/`. The custom domain is configured in repository Settings → Pages; the Actions deployment does not use a `CNAME` file. To preview a repository path locally:
 
 ```sh
 PAGES_BASE_PATH=/repository-name/ npm run check
