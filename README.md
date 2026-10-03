@@ -6,6 +6,8 @@ Publishing uses the manually dispatched GitHub Pages workflow. Pushing a commit 
 
 Production domain: https://yellowquest.io/ (privacy at `/privacy/`, support at `/support/`). Squarespace manages DNS; GitHub Pages hosts the site. `www.yellowquest.io` redirects to the primary domain.
 
+AdMob ownership is declared at `https://yellowquest.io/app-ads.txt` from `public/app-ads.txt`. Keep the publisher ID aligned with the iOS app and set the App Store Marketing URL to `https://yellowquest.io/`. Google can verify ownership after the public App Store listing is linked in AdMob.
+
 ## Local development
 
 Use Node.js **22.22.3** and npm **10.9.8**. With nvm installed, run `nvm use` in this folder first (or `nvm install` if that Node version is missing).
