@@ -2,7 +2,9 @@
 
 Static privacy, support, and home pages built with Vite, strict TypeScript, and Tailwind CSS 4. The published routes are `/`, `/privacy/`, and `/support/`, relative to the site's base path. Each route has its own HTML entry point, so direct links and refreshes work without a backend or router fallback.
 
-This setup creates no GitHub repository or deployment. Publishing remains a manual action.
+Publishing uses the manually dispatched GitHub Pages workflow. Pushing a commit does not publish the site.
+
+Production target: https://coofzilla.github.io/yellow_quest_web/ (privacy at `privacy/`, support at `support/`).
 
 ## Local development
 
@@ -26,7 +28,7 @@ Edit `site.config.ts`:
 
 - Set `ownerName` to the real person or business responsible for YellowQuest.
 - Set `supportEmail` to a real, monitored support address.
-- Review the privacy/support text and confirm `effectiveDate` reflects the approved policy. Its initial value is `2026-09-19`.
+- Review the privacy/support text and confirm `effectiveDate` reflects the approved policy. The published policy must use the date its reviewed content takes effect.
 
 Owner and email may stay `null` during development. `npm run build:release` rejects missing publication settings. Do not bypass this check when publishing. Configuration is included in the public website and repository; it must not contain secrets.
 

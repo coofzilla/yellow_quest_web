@@ -6,7 +6,7 @@ interface SiteConfiguration {
 
 // Public information, never credentials. Configure before publishing.
 export const siteConfig: SiteConfiguration = {
-  supportEmail: null,
-  ownerName: null,
-  effectiveDate: "2026-09-19",
+  supportEmail: "yellowquestofficial@gmail.com",
+  ownerName: "Jeric Hernandez",
+  effectiveDate: "2026-10-03",
 };
