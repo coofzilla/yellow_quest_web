@@ -84,42 +84,45 @@
               <a href="#reminders-and-local-measurement"><span>02</span>Reminders and local measurement</a>
             </li>
             <li>
+              <a href="#crash-and-failure-reports"><span>03</span>Crash and failure reports</a>
+            </li>
+            <li>
               <a href="#private-icloud-sync"
-                ><span>03</span>Private iCloud sync</a
+                ><span>04</span>Private iCloud sync</a
               >
             </li>
             <li>
               <a href="#premium-and-yellowpoints"
-                ><span>04</span>Premium and Coins</a
+                ><span>05</span>Premium and Coins</a
               >
             </li>
             <li>
-              <a href="#maps-and-location"><span>05</span>Maps and location</a>
+              <a href="#maps-and-location"><span>06</span>Maps and location</a>
             </li>
             <li>
               <a href="#public-rankings-and-parties"
-                ><span>06</span>Public rankings and parties</a
+                ><span>07</span>Public rankings and parties</a
               >
             </li>
             <li>
               <a href="#reports-and-blocking"
-                ><span>07</span>Reports and blocking</a
+                ><span>08</span>Reports and blocking</a
               >
             </li>
             <li>
-              <a href="#your-controls"><span>08</span>Your controls</a>
+              <a href="#your-controls"><span>09</span>Your controls</a>
             </li>
             <li>
               <a href="#no-advertising-tracking"
-                ><span>09</span>Optional rewarded ads</a
+                ><span>10</span>Optional rewarded ads</a
               >
             </li>
             <li>
-              <a href="#this-website"><span>10</span>This website</a>
+              <a href="#this-website"><span>11</span>This website</a>
             </li>
             <li>
               <a href="#contact"
-                ><span>11</span>Questions about your privacy?</a
+                ><span>12</span>Questions about your privacy?</a
               >
             </li>
           </ol>
@@ -149,51 +152,78 @@
             <div>
               <h2>Reminders and local measurement</h2>
               <p>
-                Optional quest reminders use saved quest progress, your chosen
-                schedule and notification permission. They do not start
-                location tracking. Reminder preferences, experiment assignment
-                and engagement counts stay on this device and are excluded
-                from iCloud gameplay saves. They contain no routes or
-                coordinates. Nothing is uploaded automatically; Export
-                reminder results shares a copy only when you choose to share it.
-              </p>
-              <p>
-                Deleting local data turns reminders off and clears engagement
-                records, while retaining the original experiment assignment
-                and first-launch marker so a reset is not counted as a new
-                install. You can change reminder choices in the app and
-                notification permission in iOS Settings.
+                Optional reminders and educational hints use saved
+                core-feature progress, your chosen schedule and notification
+                permission. They do not start location tracking. Reminder
+                preferences, hint history, experiment assignment and
+                engagement counts stay on this device and are excluded from
+                backups and iCloud gameplay saves. They contain no routes or
+                coordinates. Hints add no analytics. Nothing is uploaded
+                automatically. Deleting local data turns reminders off and
+                clears hint history and engagement records, while retaining
+                the original experiment assignment and first-launch marker so
+                a reset is not counted as a new install.
               </p>
               <p>
                 Adaptive quest selection keeps a bounded local record of habit
-                targets, progress, availability and coarse completion measures.
-                Deduplication and temporary destination exclusions use keyed
-                hashes. This record is outside iCloud gameplay saves and
-                contains no coordinates, routes, raw destination identifiers
-                or inferred home or work locations. No adaptive analytics are
-                uploaded. Local data deletion and player replacement erase
-                this record. Saved quest destinations retain the normal
-                gameplay-save behavior described below.
+                targets, progress, availability and coarse completion
+                measures. Deduplication and temporary destination exclusions
+                use keyed hashes. This adaptation data is outside iCloud
+                gameplay saves and contains no coordinates, routes, raw
+                destination identifiers or inferred home or work locations. No
+                adaptive analytics are uploaded. Local data deletion and
+                player replacement erase it. Functional destination history
+                and itinerary quest-credit evidence are separate gameplay
+                data. Quest-credit evidence retains the destination
+                identifier, name, location and check-in time after an
+                itinerary is deleted so a place cannot earn credit again. It
+                follows the private gameplay-save and data-deletion behavior
+                described below.
+              </p>
+            </div>
+          </section>
+          <section id="crash-and-failure-reports" class="policy-section">
+            <div class="section-number">03</div>
+            <div>
+              <h2>Crash and failure reports</h2>
+              <p>
+                YellowQuest automatically sends crash reports and selected
+                unexpected app failures to Sentry to find and fix bugs. This
+                reporting is separate from optional rewarded ads. Reports
+                include app/build and operating-system versions, device model,
+                technical stack traces and a short, bounded history of fixed
+                app-operation labels. They exclude coordinates, routes,
+                profile and account identifiers, save contents, purchase
+                proofs, raw error descriptions and user content. Sentry&#x27;s
+                network service still receives the connecting IP address.
+                Reports are not used for advertising or cross-app tracking.
+              </p>
+              <p>
+                Session replay, screenshots, performance profiling, tracing
+                and log uploads are disabled. Reports may be cached on your
+                device and sent after a later launch or reconnection; delivery
+                is not guaranteed.
               </p>
             </div>
           </section>
           <section id="private-icloud-sync" class="policy-section">
-            <div class="section-number">03</div>
+            <div class="section-number">04</div>
             <div>
               <h2>Private iCloud sync</h2>
               <p>
-                When sync is enabled, Apple CloudKit stores your private save so
-                devices using the same iCloud account can share progress. This
-                includes your profile and optional photo, rewards, quests,
-                adventures, home and quest destinations, discovered map cells
+                When sync is enabled, Apple CloudKit stores your private save
+                so devices using the same iCloud account can share progress.
+                This includes your profile and optional photo, rewards,
+                quests, adventures, saved trips, itinerary quest-credit
+                evidence, home and quest destinations, discovered map cells
                 and associated times. Raw GPS recordings are excluded. Private
-                saved locations are still location data, even though raw routes
-                are not uploaded.
+                saved locations are still location data, even though raw
+                routes are not uploaded.
               </p>
             </div>
           </section>
           <section id="premium-and-yellowpoints" class="policy-section">
-            <div class="section-number">04</div>
+            <div class="section-number">05</div>
             <div>
               <h2>Premium and Coins</h2>
               <p>
@@ -211,6 +241,22 @@
                 not sent to a separate YellowQuest account or coin server.
               </p>
               <p>
+                Optional friend invitations store your code, eligibility and
+                reward allocations in your private iCloud account. When you
+                accept a code, CloudKit stores a referral relationship and
+                whether you completed a qualifying journey. These code and
+                claim records are readable by signed-in YellowQuest users and
+                use opaque account identifiers; they contain no route,
+                location, email or coin balance. Invitation rewards retain
+                pseudonymous receipts in the inviter&#x27;s private save. A
+                device-only Keychain marker helps distinguish existing
+                installations. Gameplay resets do not restart eligibility.
+                Delete YellowQuest Data removes your public code and claim and
+                retains a minimal private consumed marker so starting fresh
+                does not renew the offer. Other players retain their own
+                invitation claims and earned reward receipts.
+              </p>
+              <p>
                 Deleting the app or its data does not cancel your Apple
                 subscription. Manage or cancel it through Apple’s subscription
                 settings.
@@ -218,113 +264,127 @@
             </div>
           </section>
           <section id="maps-and-location" class="policy-section">
-            <div class="section-number">05</div>
+            <div class="section-number">06</div>
             <div>
               <h2>Maps and location</h2>
               <p>
-                With your permission, location supports discovery, journeys and
-                quest check-ins, including background check-ins when allowed by
-                your settings. Apple MapKit handles maps, area searches and
-                place lookups. Search terms, the searched area and requested
-                places are sent to Apple. Opening navigation sends the chosen
-                destination to your selected map provider. You can change
-                location access in device Settings.
+                With your permission, location supports discovery, journeys
+                and quest check-ins, including background check-ins when
+                allowed by your settings. Apple MapKit handles maps, area
+                searches and place lookups. Search terms, the searched area
+                and requested places are sent to Apple. Opening navigation
+                sends the chosen destination to your selected map provider.
+                You can change location access in device Settings. When you
+                ask Yellow about weather, Apple MapKit may receive the
+                requested place/search text, and Apple WeatherKit receives the
+                location to return conditions or forecasts. Nearby weather
+                uses your current location only when you ask and allow access;
+                you can give Yellow a city instead. Conversation history is
+                processed on your device, without a remote language model.
+                Chat text and weather locations are excluded from diagnostics.
               </p>
             </div>
           </section>
           <section id="public-rankings-and-parties" class="policy-section">
-            <div class="section-number">06</div>
+            <div class="section-number">07</div>
             <div>
               <h2>Public rankings and parties</h2>
               <p>
-                Your Profile username and optional photo also identify you in
-                public rankings. Personal rankings are free and enrollment is
-                automatic when iCloud sync is connected to your save. Your
-                username, photo, ranking stats and a stable public identifier
-                are shared with everyone. Edit your username and photo in
-                Profile; there is no separate ranking profile or enrollment
-                control. Joining a
-                party publishes the party name and photo, member ranking stats,
-                membership identifiers and join dates used to verify group
-                scores. Rankings do not publish your coin balance, home, quest
-                destinations or live location.
+                Your Profile username, optional note and optional photo also
+                identify you in public rankings. Personal rankings are free
+                and enrollment is automatic when iCloud sync is connected to
+                your save. Your username, note, photo, ranking stats and a
+                stable public identifier are shared with everyone. Edit your
+                username, note and photo in Profile; there is no separate
+                ranking profile or enrollment control. Historical bios stay in
+                your private save and are not converted into public notes.
+                Rankings include your verified quest completion count. Public
+                group rankings are retired; joining a party does not publish
+                group ranking data. Rankings do not publish your coin balance,
+                home, quest destinations or live location.
               </p>
               <p>
                 When you share an adventure, its quest destinations become
-                available to your party through CloudKit sharing. Party members
-                can see membership names and shared quest check-in progress.
-                Optional location sharing is off by default. When you turn it on
-                for a party, your latest location, accuracy, update time and
-                photo from Profile are shared with all current and future
-                members through the private CloudKit share, including while the
-                app is in the background with Always location access.
-                YellowQuest keeps one latest location record per member, not a
-                route history. Locations older than two minutes disappear from
-                the app’s map; this display expiry does not itself erase the
-                CloudKit record. Sharing controls apply to each device. If
-                multiple devices share, the newest fix is displayed. Stopping
-                sharing clears the coordinate and photo when the latest fix came
-                from this device; another device may continue sharing until you
-                stop it there too. Leaving, removal or ending the party deletes
-                the location record when the cloud operation succeeds. A failed
-                stop stops this device’s GPS sharing immediately and shows a
-                connection message. Invitation links give access to an
-                invitation; send them only to people you intend to invite.
+                available to your party through CloudKit sharing. Party
+                members can see membership names and shared quest check-in
+                progress. Optional location sharing is off by default. When
+                you turn it on for a party, your latest location, accuracy,
+                update time and photo from Profile are shared with all current
+                and future members through the private CloudKit share,
+                including while the app is in the background with Always
+                location access. YellowQuest keeps one latest location record
+                per member, not a route history. Locations older than two
+                minutes disappear from the app’s map; this display expiry does
+                not itself erase the CloudKit record. Sharing controls apply
+                to each device. If multiple devices share, the newest fix is
+                displayed. Stopping sharing clears the coordinate and photo
+                when the latest fix came from this device; another device may
+                continue sharing until you stop it there too. Leaving, removal
+                or ending the party deletes the location record when the cloud
+                operation succeeds. A failed stop stops this device’s GPS
+                sharing immediately and shows a connection message. Invitation
+                links give access to an invitation; send them only to people
+                you intend to invite.
               </p>
             </div>
           </section>
           <section id="reports-and-blocking" class="policy-section">
-            <div class="section-number">07</div>
+            <div class="section-number">08</div>
             <div>
               <h2>Reports and blocking</h2>
               <p>
-                Public names are filtered, and Apple’s on-device Sensitive
-                Content Analysis checks public photos when enabled in iOS
-                Settings. Screening results are not uploaded. Reports send your
-                selected reason, optional details, the reported name and photo,
-                and account identifiers to CloudKit for moderator review.
-                Reports are not public listings. Your blocked-account list is
-                stored privately for your iCloud account. Blocking hides that
-                person’s public content, invitations and location marker; it
-                does not leave or remove members from an existing party. Members
-                of a CloudKit share retain access to its shared records. Stop
-                location sharing or leave/remove the member to end that sharing
+                Public names are filtered, public notes receive bounded
+                English-only word checks on the device, and Apple’s on-device
+                Sensitive Content Analysis checks public photos when enabled
+                in iOS Settings. Note checks do not reliably detect every
+                abusive phrase, evasion or other language; notes are not
+                approved before publication. Screening results are not
+                uploaded. Reports send your selected reason, optional details,
+                the reported name, full note and photo, and account
+                identifiers to CloudKit for moderator review. Reports are not
+                public listings. Your blocked-account list is stored privately
+                for your iCloud account. Blocking hides that person’s public
+                content, invitations and location marker; it does not leave or
+                remove members from an existing party. Members of a CloudKit
+                share retain access to its shared records. Stop location
+                sharing or leave/remove the member to end that sharing
                 relationship.
               </p>
               <p>
-                Deleting your YellowQuest data removes your reports and blocked
-                list. Minimal moderation identifiers may remain to enforce
-                restrictions and prevent abuse. Reports remain until deleted by
-                their author through account deletion or removed by a moderator.
+                Deleting your YellowQuest data removes your reports and
+                blocked list. Minimal moderation identifiers may remain to
+                enforce restrictions and prevent abuse. Reports remain until
+                deleted by their author through account deletion or removed by
+                a moderator.
               </p>
             </div>
           </section>
           <section id="your-controls" class="policy-section">
-            <div class="section-number">08</div>
+            <div class="section-number">09</div>
             <div>
               <h2>Your controls</h2>
               <p>
-                Edit your username and photo in Profile and leave a group in
-                Party. Sync and deletion controls are in Settings.
-                <strong>Delete All Local Data</strong> clears this device only;
-                cloud and public data remain.
-                <strong>Delete YellowQuest Data</strong>, in iCloud settings,
-                removes your cloud save, public profile, your party data and
-                this device’s progress. It disbands parties you lead. An
-                interrupted deletion stays pending for retry, with sync paused.
-                Minimal deletion markers prevent old devices from uploading
-                erased progress again. <strong>Start Fresh</strong> creates an
-                empty save.
+                Edit your username, note and photo in Profile and leave a
+                group in Party. Sync and deletion controls are in Settings.
+                <strong>Delete All Local Data</strong> clears this device
+                only; cloud and public ranking data remain. <strong>Delete
+                YellowQuest Data</strong>, in iCloud settings, removes your
+                cloud save, public ranking entry, your party data and this
+                device’s progress. It disbands parties you lead. An
+                interrupted deletion stays pending for retry, with sync
+                paused. Minimal deletion markers prevent old devices from
+                uploading erased progress again. <strong>Start Fresh</strong>
+                creates an empty save.
               </p>
               <p>
-                Other devices may retain offline copies until they reconnect and
-                complete the deletion flow. Exports or copies held by other
-                people cannot be recalled.
+                Other devices may retain offline copies until they reconnect
+                and complete the deletion flow. Exports or copies held by
+                other people cannot be recalled.
               </p>
             </div>
           </section>
           <section id="no-advertising-tracking" class="policy-section">
-            <div class="section-number">09</div>
+            <div class="section-number">10</div>
             <div>
               <h2>Optional rewarded ads</h2>
               <p>
@@ -353,7 +413,7 @@
             </div>
           </section>
           <section id="this-website" class="policy-section">
-            <div class="section-number">10</div>
+            <div class="section-number">11</div>
             <div>
               <h2>This website</h2>
               <p>
@@ -377,7 +437,7 @@
             </div>
           </section>
           <section id="contact" class="policy-section">
-            <div class="section-number">11</div>
+            <div class="section-number">12</div>
             <div>
               <h2>Questions about your privacy?</h2>
               <p>

@@ -8,5 +8,5 @@ interface SiteConfiguration {
 export const siteConfig: SiteConfiguration = {
   supportEmail: "yellowquestofficial@gmail.com",
   ownerName: "Jeric Hernandez",
-  effectiveDate: "2026-10-03",
+  effectiveDate: "2026-11-02",
 };
